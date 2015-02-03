@@ -160,6 +160,10 @@ The comprehensive list of step options are listed below:
 
 * `fixedElement` [BOOLEAN] - set to true if the target element has fixed positioning. *Default*: false.
 
+* `highlight` [BOOLEAN] - set to true if the target element should be highlighted. *Default*: false.
+
+* `highlightMargin` [INT] - highlighted area margin in px. *Default*: 0.
+
 * `nextOnTargetClick` [BOOLEAN] - triggers nextStep() when the target is clicked. *Default*: false.
 
 * `onPrev` [FUNCTION] - callback for when 'Previous' button is clicked
