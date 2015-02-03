@@ -2479,21 +2479,21 @@
       el = this.element.top;
       el.style.top = '0px';
       el.style.left = '0px';
-      el.style.width = window.screen.width + 'px';
+      el.style.width = window.innerWidth + 'px';
       el.style.height = targetBounds.top + utils.getScrollTop() - margin + 'px';
 
       // right div:
       el = this.element.right;
       el.style.top = targetBounds.top + utils.getScrollTop() - margin + 'px';
       el.style.left = targetBounds.left + targetBounds.width + utils.getScrollLeft() + margin + 'px';
-      el.style.width = window.screen.width  - (targetBounds.left + targetBounds.width + utils.getScrollLeft() + margin) +  'px';
+      el.style.width = window.innerWidth  - (targetBounds.left + targetBounds.width + utils.getScrollLeft() + margin) +  'px';
       el.style.height = targetBounds.height + margin * 2 + 'px';
 
       // bottom div:
       el = this.element.bottom;
       el.style.top = targetBounds.top + utils.getScrollTop() + targetBounds.height + margin + 'px';
       el.style.left = '0px';
-      el.style.width = window.screen.width + 'px';
+      el.style.width = window.innerWidth + 'px';
       el.style.height = documentHeight - (targetBounds.top + utils.getScrollTop() + targetBounds.height + margin) + 'px';
 
       // left div:
